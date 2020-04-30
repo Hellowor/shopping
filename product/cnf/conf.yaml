@@ -1,0 +1,18 @@
+appname: product
+appport: 8777
+
+# 请求订单的服务器
+ioturl:
+
+# host
+schemehost:
+
+# 文件的存放地方
+tmpfolder :
+
+# 数据库的配置
+db:
+  dns:     sayinfo:rns@2019@tcp(rm-8vbgc1j1n9vqak1e6o.mysql.zhangbei.rds.aliyuncs.com:3306)/mtactivity?charset=utf8&loc=Asia%2FShanghai
+  active:     20
+  idle:     10
+  idleTimeout:     300000
