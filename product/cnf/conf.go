@@ -2,9 +2,9 @@ package conf
 
 import (
 	"github.com/jinzhu/configor"
+	"github.com/rex-ss/library/database/mysql"
 	log "github.com/sirupsen/logrus"
 	"os"
-	"github.com/library/database/mysql"
 )
 
 var Config = struct {
@@ -14,8 +14,8 @@ var Config = struct {
 	SchemeHost string
 	TmpFolder  string
 	Pwd        string
-	DB         mysql.Config
-	DBDAO      mysql.Dao
+	DB         *mysql.Config
+	DBDAO      *mysql.Dao
 }{}
 
 func init() {
@@ -31,5 +31,5 @@ func init() {
 }
 
 func init() {
-	Config.DBDAO.New()
+	Config.DBDAO = mysql.New(Config.DB)
 }
