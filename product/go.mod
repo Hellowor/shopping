@@ -13,4 +13,5 @@ require (
 	github.com/rex-ss/library v0.0.2
 	github.com/sirupsen/logrus v1.5.0
 	golang.org/x/sys v0.0.0-20200420163511-1957bb5e6d1f // indirect
+	mosn.io/mosn v0.12.0 // indirect
 )
